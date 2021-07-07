@@ -29,7 +29,7 @@ app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 
 // Parse Cookie
-app.use(cookieParser(process.env.SECRET_KEY));
+app.use(cookieParser(process.env.COOKIE_SECRET));
 
 // Routing Setup
 app.use("/", loginRouter);
