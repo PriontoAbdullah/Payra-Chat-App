@@ -46,7 +46,7 @@ async function addUser(req, res, next) {
     res.status(500).json({
       errors: {
         common: {
-          msg: "Unknown error occurred!",
+          msg: "Unknown error occured!",
         },
       },
     });
@@ -63,7 +63,7 @@ async function removeUser(req, res, next) {
     // remove user avatar if any
     if (user.avatar) {
       unlink(
-        path.join(__dirname, `../public/uploads/avatars/${user.avatar}`),
+        path.join(__dirname, `/../public/uploads/avatars/${user.avatar}`),
         (err) => {
           if (err) console.log(err);
         }

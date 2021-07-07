@@ -90,13 +90,13 @@
             : "./images/nophoto.png";
 
           generatedHtml += `<li onclick="createConversation('${user._id}', '${user.name}', '${user.avatar}')">
-                <div class="user">
-                  <div class="avatar">
-                    <img src="${avatar}" />
-                  </div>
-                  <div class="username">${user.name}</div>
+              <div class="user">
+                <div class="avatar">
+                  <img src="${avatar}" />
                 </div>
-              </li>`;
+                <div class="username">${user.name}</div>
+              </div>
+            </li>`;
         });
         generatedHtml += "</ul>";
         users_placeholder.innerHTML = generatedHtml;

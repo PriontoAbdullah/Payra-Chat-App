@@ -471,7 +471,6 @@ input[type="submit"]:active {
 }
 
 .message-row img:first-of-type {
-  border-radius: 100%;
   grid-row: span 2;
 }
 
@@ -498,6 +497,11 @@ input[type="submit"]:active {
   color: #111;
   border: 2px solid var(--dark);
   border-radius: 14px 14px 0 14px;
+}
+
+.attachments img {
+  width: 70%;
+  border-radius: 20px;
 }
 
 #chat-form {
